@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" id="to">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fury | Movies</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/223156cadd.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="container" class="container">
+      <img id="hero" src="img (10).jpg" />
+      <header>
+        <a id="logo" href="../Index.html">Movies</a>
+        <nav>
+          <ul>
+            <li title="Home"><a href="../Index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li title="Movies"><a href="#"><i class="fa-solid fa-film"></i></a></li>
+            <li title="Series"><a href="#"><i class="fa-solid fa-tv"></i></a></li>
+            <li title="Watchlist"><a href="#"><i class="fa-solid fa-clock"></i></a></li>
+            <li title="Download"><a href="#"><i class="fa-solid fa-download"></i></a></li>
+          </ul>
+        </nav>
+        <div id="meta">
+          <div class="search-box" id="searchBox">
+  <svg
+    id="searchIcon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 16 16"
+  >
+    <path
+      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+    />
+  </svg>
+
+  <input type="text" placeholder="Search movies..." />
+</div>
+
+          <div class="user-menu" id="userMenu">
+  <img class="user" id="userAvatar" src="img (14).jpg" alt="user" />
+
+  <ul class="user-dropdown">
+  <li title="Settings">
+    <a href="#"><i class="fa-solid fa-gear"></i></a>
+  </li>
+
+  <li title="Login">
+    <a href="../login/index.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+  </li>
+
+  <li title="Sign Up">
+    <a href="../login/signup.html"><i class="fa-solid fa-user-plus"></i></a>
+  </li>
+
+  <li title="Logout" class="danger">
+    <a href="../Index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+  </li>
+</ul>
+
+</div>
+
+        </div>
+      </header>
+      <main>
+        <h1>Fury</h1>
+        <div class="rating">⭐️⭐️⭐️</div>
+        <p>
+          During the final days of World War II, a battle-hardened U.S. 
+                Army sergeant leads his tank crew on a deadly mission behind enemy lines, facing overwhelming odds and the brutal realities of war....
+              
+        </p>
+        <button>Watch now ▶</button>
+      </main>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+
+ 
+  const toggleBtn = document.getElementById("toggle-view");
+
+  toggleBtn?.addEventListener("click", () => {
+    document.querySelectorAll(".movies li img").forEach((img, index) => {
+      img.style.viewTransitionName = `movie-${index}`;
+    });
+
+    document.startViewTransition(() => {
+      document.querySelector(".movies").classList.toggle("column");
+    });
+  });
+
+  
+  const searchBox = document.getElementById("searchBox");
+  const searchIcon = document.getElementById("searchIcon");
+
+  if (searchBox && searchIcon) {
+    searchIcon.addEventListener("click", (e) => {
+      e.stopPropagation();
+      searchBox.classList.toggle("active");
+      searchBox.querySelector("input")?.focus();
+    });
+  }
+
+  const userMenu = document.getElementById("userMenu");
+  const userAvatar = document.getElementById("userAvatar");
+
+  if (userMenu && userAvatar) {
+    userAvatar.addEventListener("click", (e) => {
+      e.stopPropagation();
+      userMenu.classList.toggle("active");
+    });
+  }
+
+
+  document.addEventListener("click", (e) => {
+    if (searchBox && !searchBox.contains(e.target)) {
+      searchBox.classList.remove("active");
+    }
+
+    if (userMenu && !userMenu.contains(e.target)) {
+      userMenu.classList.remove("active");
+    }
+  });
+
+});
+
+    </script>
+  </body>
+</html>
