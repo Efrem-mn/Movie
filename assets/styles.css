@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+      font-family: "Quicksand", sans-serif;
+
+}
+
+body {
+  background: #333;
+  margin: auto;
+  padding: 0;
+    font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  padding: 2rem;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0e4109;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: blueviolet;
+}
+.container {
+  background: #fff;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+#hero {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 1rem;
+  border: 8px solid #a52424;
+  background: transparent;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  inset: 0 0 auto 0;
+  padding: 1rem 2rem;
+}
+main p{
+  font-size: 13px;
+}
+
+#logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: -6%;
+  view-transition-name: title;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  margin-top: -16%;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 15px;
+}
+
+nav ul li a:hover {
+  color: blueviolet;
+}
+
+nav ul li i {
+  padding: 10px 30px;
+  font-size: 16px;
+}
+#meta .search-box{
+  color: #000;
+  background-color: #fff;
+  
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.search-box svg {
+  width: 18px;
+  margin-top: -30%;
+  margin-left: 20%;
+  height: 18px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.search-box input {
+  width: 0;
+  opacity: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.search-box.active {
+  border-color: #0e4109;
+}
+
+.search-box.active input {
+  width: 120px;
+  opacity: 1;
+}
+
+.user-menu {
+  position: relative;
+}
+
+.user {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20%;
+  cursor: pointer;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 55px;
+  right: -180%;
+  list-style: none;
+  padding: 8px 0;
+  min-width: 140px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.25s ease;
+}
+
+.user-dropdown li a {
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 12px;
+  display: block;
+}
+.user-dropdown li a i:hover{
+  color: blueviolet;
+}
+.user-menu.active .user-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+.user-menu .danger a{
+  color: #a52424;
+}
+#to main {
+  position: absolute;
+  margin-top: -15%;
+  width: 100%;
+  padding: 2rem;
+  color: #fff;
+  border-radius: 2rem;
+  view-transition-name: movie-description;
+}
+
+#to h1 {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 0.3rem 1.2rem;
+  border-radius: 1.6rem;
+  background: #fff;
+  border: none;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0e4109;
+  color: #fff;
+}
+
+

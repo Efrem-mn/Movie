@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/223156cadd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a id="logo" href="../Index.html">Movies</a>
+        <nav>
+            <ul>
+                <li title="Home"><a href="../Index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li title="Movies"><a href="../movie/movie.html"><i class="fa-solid fa-film"></i></a></li>
+                <li title="Series"><a href="../movie/movie.html"><i class="fa-solid fa-tv"></i></a></li>
+                <li title="Watchlist"><a href="#"><i class="fa-solid fa-clock"></i></a></li>
+                <li title="Download"><a href="#"><i class="fa-solid fa-download"></i></a></li>
+            </ul>
+        </nav>
+        <div id="meta">
+            <div class="search-box" id="searchBox">
+                <svg id="searchIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+                <input type="text" placeholder="Search movies..." />
+            </div>
+        </div>
+    </header>
+
+    <div class="ring">
+        <i style="--clr:#00ff0a;"></i>
+        <i style="--clr:#ff0057;"></i>
+        <i style="--clr:#dad60a;"></i>
+        
+        <div class="signup">
+            <h2>Sign Up</h2>
+            <div class="inputBx">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="inputBx">
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="inputBx">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="inputBx">
+                <input type="password" placeholder="Confirm Password" required>
+            </div>
+            <div class="inputBx">
+                <input type="submit" value="Register">
+            </div>
+            <div class="links">
+                <a href="#">Terms of Use</a>
+                <a href="index.html">Sign In</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchBox = document.getElementById("searchBox");
+            const searchIcon = document.getElementById("searchIcon");
+
+            if (searchBox && searchIcon) {
+                searchIcon.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    searchBox.classList.toggle("active");
+                    searchBox.querySelector("input")?.focus();
+                });
+            }
+
+            document.addEventListener("click", (e) => {
+                if (searchBox && !searchBox.contains(e.target)) {
+                    searchBox.classList.remove("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

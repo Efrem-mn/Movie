@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" id="from">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/223156cadd.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <a id="logo" href="Index.html">Movies</a>
+        <nav>
+          <ul>
+            <li title="Home"><a href="Index.html"><i class="fa-solid fa-house"></i></a></li>
+            <li title="Movies"><a href="movie/movie.html"><i class="fa-solid fa-film"></i></a></li>
+            <li title="Series"><a href="series/series.html"><i class="fa-solid fa-tv"></i></a></li>
+            <li title="Watchlist"><a href="#"><i class="fa-solid fa-clock"></i></a></li>
+            <li title="Download"><a href="#"><i class="fa-solid fa-download"></i></a></li>
+          </ul>
+        </nav>
+        <div id="meta">
+          <div class="search-box" id="searchBox">
+  <svg
+    id="searchIcon"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 16 16"
+  >
+    <path
+      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+    />
+  </svg>
+
+  <input type="text" placeholder="Search movies..." />
+</div>
+
+          <div class="user-menu" id="userMenu">
+  <img class="user" id="userAvatar" src="img/img (14).jpg" alt="user" />
+
+  <ul class="user-dropdown">
+  <li title="Settings">
+    <a href="#"><i class="fa-solid fa-gear"></i></a>
+  </li>
+
+  <li title="Login">
+    <a href="login/index.html"><i class="fa-solid fa-right-to-bracket"></i></a>
+  </li>
+
+  <li title="Sign Up">
+    <a href="login/signup.html"><i class="fa-solid fa-user-plus"></i></a>
+  </li>
+
+  <li title="Logout" class="danger">
+    <a href="Index.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+  </li>
+</ul>
+
+</div>
+
+        </div>
+      </header>
+      <main>
+        
+        <h1>Watch Any Movie</h1>
+        <button id="toggle-view">Show / Hide</button>
+        <ul class="movies">
+          <li>
+            <a href="assets/to.html" id="Breaking-bad">
+              <img src="img/img (11).jpg" />
+            </a>
+            <div class="details">
+              <h3>Braking Bad</h3>
+              <div class="rating">⭐⭐⭐⭐</div>
+              <p>
+                A high school chemistry teacher, Walter White, is diagnosed with terminal cancer
+                 and turns to manufacturing methamphetamine with a former student to secure his family’s financial future...
+              </p>
+              <div class="cast">
+                <div>
+                  <div class="name">Created by: </div>
+                  <div class="role">Vince Gilligan</div>
+                </div>
+                <div>
+                  <div class="name">Genre: </div>
+                  <div class="role">Crime, Drama, Thriller</div>
+                </div>
+                <div>
+                  <div class="name">Starring:</div>
+                  <div class="role"> Bryan Cranston, Aaron Paul</div>
+                </div>
+                <div>
+                  <div class="name">Years: </div>
+                  <div class="role">2008–2013</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="assets/titanic.html" id="Titanic">
+              <img src="img/img (12).jpg" />
+            </a>
+            <div class="details">
+              <h3>Titanic</h3>
+              <div class="rating">⭐️⭐️⭐️⭐️</div>
+              <p>
+                A young aristocratic woman, Rose, falls in love with a poor but free-spirited artist, Jack, aboard 
+                the ill-fated RMS Titanic. Their romance unfolds against the backdrop of the ship’s tragic sinking on its maiden voyage in 1912....
+              </p>
+              <div class="cast">
+                <div>
+                  <div class="name">Writer: </div>
+                  <div class="role">James Cameron</div>
+                </div>
+                <div>
+                  <div class="name">Genre:</div>
+                  <div class="role">Romance, Drama</div>
+                </div>
+                <div>
+                  <div class="name">Starring:</div>
+                  <div class="role">Leonardo DiCaprio, Kate Winslet</div>
+                </div>
+                <div>
+                  <div class="name">Year: </div>
+                  <div class="role">1997</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="assets/harry.html" id="harry-potter">
+              <img src="img/img (13).jpg" />
+            </a>
+            <div class="details">
+              <h3>Harry Potter</h3>
+              <div class="rating">⭐️⭐️⭐️⭐️⭐️</div>
+              <p>
+                An orphaned boy, Harry Potter, discovers on his eleventh birthday that he is a wizard and is invited to attend Hogwarts School of 
+                Witchcraft and Wizardry, where he uncovers the truth about his past and faces the dark wizard Lord Voldemort....
+              </p>
+              <div class="cast">
+                <div>
+                  <div class="name">Writer: </div>
+                  <div class="role">J. K. Rowling</div>
+                </div>
+                <div>
+                  <div class="name">Genre:</div>
+                  <div class="role">Fantasy, Adventure</div>
+                </div>
+                <div>
+                  <div class="name">Starring:</div>
+                  <div class="role">Daniel Radcliffe, Emma Watson, Rupert Grint</div>
+                </div>
+                <div>
+                  <div class="name">Year: </div>
+                  <div class="role">2001–2011</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="assets/fury.html" id="fury">
+              <img src="img/img (15).jpg" />
+            </a>
+            <div class="details">
+              <h3>Fury</h3>
+              <div class="rating">⭐️⭐️⭐️</div>
+              <p>
+                During the final days of World War II, a battle-hardened U.S. 
+                Army sergeant leads his tank crew on a deadly mission behind enemy lines, facing overwhelming odds and the brutal realities of war....
+              </p>
+              <div class="cast">
+                <div>
+                  <div class="name">Writer: </div>
+                  <div class="role">David Ayer</div>
+                </div>
+                <div>
+                  <div class="name">Genre:</div>
+                  <div class="role">War, Action, Drama</div>
+                </div>
+                <div>
+                  <div class="name">Starring:</div>
+                  <div class="role">Brad Pitt, Shia LaBeouf, Logan Lerman</div>
+                </div>
+                <div>
+                  <div class="name">Year: </div>
+                  <div class="role">2014</div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <section class="two">
+      <h1>New Movies</h1>
+      <div class="movies">
+        <div class="top1">
+          <div class="img"><img src="img/img (22).jpg" alt=""></div>
+          
+          <h2>The Mask</h2>
+          <p>⭐️⭐️⭐️⭐️⭐️</p>
+          <button>Watch now ▶</button>
+        </div>
+        <div class="top2">
+          <div class="img"><img src="img/img (20).jpg" alt=""></div>
+          
+          <h2>WorldWar Z</h2>
+          <p>⭐️⭐️⭐️</p>
+          <button>Watch now ▶</button>
+        </div>
+        <div class="top3">
+          <div class="img"><img src="img/img (23).jpg" alt=""></div>
+          
+          <h2>Home Alone</h2>
+          <p>⭐️⭐️⭐️⭐️⭐️</p>
+          <button>Watch now ▶</button>
+        </div>
+        <div class="top4">
+          <div class="img"><img src="img/img (19).jpg" alt=""></div>
+          
+          <h2>Maleficent</h2>
+          <p>⭐️⭐️⭐️⭐️</p>
+          <button>Watch now ▶</button>
+          
+        </div>
+      </div>
+      <div class="titles">
+        <h3>Watch Any Movie You<br> Like</h3>
+        <a href="movie/movie.html"><button>Watch More ▶</button></a>
+        
+      </div>
+    </section>
+    <section class="third">
+      <h1>New Series</h1>
+      <div class="series">
+      <div class="series1">
+          <div class="img"><img src="img/img (21).jpg" alt=""></div>
+          
+          <h2>Peaky Blinders</h2>
+          <p>⭐️⭐️⭐️⭐️⭐️</p>
+          <button>Watch now ▶</button>
+        </div>
+        <div class="series2">
+          <div class="img"><img src="img/img (24).jpg" alt=""></div>
+          
+          <h2>Game Of Thrones</h2>
+          <p>⭐️⭐️⭐️⭐️⭐️</p>
+          <button>Watch now ▶</button>
+        </div>
+        
+        <div class="series3">
+          <div class="img"><img src="img/img (25).jpg" alt=""></div>
+          
+          <h2>You</h2>
+          <p>⭐️⭐️⭐️</p>
+          <button>Watch now ▶</button>
+        </div>
+        
+        <div class="series4">
+          <div class="img"><img src="img/img (26).jpg" alt=""></div>
+          
+          <h2>Friends</h2>
+          <p>⭐️⭐️⭐️⭐️⭐️</p>
+          <button>Watch now ▶</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="titles">
+        <h3>Watch Any Movie Series <br>You Like</h3>
+        <a href="series/series.html"><button>Watch More ▶</button></a>
+        
+      </div>
+    </section>
+    <section class="Fourth">
+      <h1>Upcoming Calendar</h1>
+      <div class="upcoming">
+        <div class="upcoming1">
+          <div class="img"><img src="img/img (8).jpg" alt=""></div>
+          
+          <h2>IT</h2>
+          <p>Release on <span>Dec 20th</span></p>
+          <button>Remaind Me 📢</button>
+        </div>
+        <div class="upcoming2">
+          <div class="img"><img src="img/img (7).jpg" alt=""></div>
+          
+          <h2>Hannibal</h2>
+          <p>Release on <span>Dec 25th</span></p>
+          <button>Remaind Me 📢</button>
+        </div>
+        <div class="upcoming3">
+          <div class="img"><img src="img/img (28).jpg" alt=""></div>
+          
+          <h2>Togo</h2>
+          <p>Release on <span>jan 5th</span></p>
+          <button>Remaind Me 📢</button>
+        </div>
+        <div class="upcoming4">
+          <div class="img"><img src="img/img (18).jpg" alt=""></div>
+          
+          <h2>The Book Of Eli</h2>
+          <p>Release on <span>jan 8th</span></p>
+          <button>Remaind Me 📢</button>
+        </div>
+        <div class="upcoming5">
+          <div class="img"><img src="img/img (17).jpg" alt=""></div>
+          
+          <h2>Me Before You</h2>
+          <p>Release on <span>jan 20th</span></p>
+          <button>Remaind Me 📢</button>
+        </div>
+      </div>
+    </section>
+    <section class="fifth">
+      <div class="two">
+        <ul>
+          <li title="Trending">
+    <a href="#"><i class="fa-solid fa-fire"></i></a>
+  </li>
+   <li title="Contact">
+    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+  </li>
+  <li title="FAQ">
+    <a href="#"><i class="fa-solid fa-circle-question"></i></a>
+  </li>
+  <li title="About">
+    <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+  </li>
+  <li title="Privacy Policy">
+    <a href="#"><i class="fa-solid fa-shield-halved"></i></a>
+  </li>
+</ul>
+
+
+      </div>
+      <div class="download">
+        <h1>Download On</h1>
+        <ul>
+  <li title="Play Store">
+    <a href="#"><i class="fa-brands fa-google-play"></i></a>
+  </li>
+
+  <li title="App Store">
+    <a href="#"><i class="fa-brands fa-apple"></i></a>
+  </li>
+
+  <li title="Web">
+    <a href="#"><i class="fa-solid fa-globe"></i></a>
+  </li>
+</ul>
+
+      </div>
+      <footer>
+        <p>Movies.com | All Right Reseved | 2026.</p>
+      </footer>
+    </section>
+  </body>
+</html>
